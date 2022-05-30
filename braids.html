@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title> Braid program </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<em>Note: this page is not being maintained.</em>
+
+<br>
+
+<h1>Braid groups</h1>
+
+<p>
+The following braid applet
+lets you play with the braid group B_5.
+
+<center>
+<p>
+<applet code="Braid.class" width = 200 height = 300>
+</applet>
+<br>
+<a href="Braid.java">source</a>
+</center>
+
+Type in a sequence of characters
+and it will display the corresponding braid.
+It recognises a, b, c, d, A, B, C, D, and 1.
+(Anything else is treated the same as a "1".)
+For example you could type in b1Ca, ACDC, or Abacadaba.
+
+<p>
+A sequence of letters you type in is called a "word"
+(in braid theory, if not in Scrabble).
+The program responds with a picture of a "braid".
+Now that we have wikipedia,
+there's no need for me to explain exactly what a braid is.
+However I will point out that two different words
+can represent the same braid.
+Some important examples are aA = 1, ac = ca, and aba = bab.
+
+<p>
+<a href="http://www.math.unicaen.fr/~tressapp/index.html">
+Patrick Dehornoy
+</a>
+and his student Jean Fromentin
+have vastly extended the functionality of my simple little program.
+<a href="http://sunsite.ubc.ca/Djun/thesis/java/cutseq.html">
+Djun Kim
+</a>
+also has a java program
+illustrating a different viewpoint on braid groups.
+Good textbooks include
+"Braids, Links and Mapping Class Groups" by Birman,
+and "Knots, links, braids and 3-manifolds" by Prasolov and Sossinsky.
+
+<p>
+Roughly speaking, my job is to turn braids into matrices,
+which are just arrays of numbers
+with a complicated rule for multiplication.
+I am interested in finding matrices
+that multiply in the same way as braids do.
+For example, aba and bab represent the same braid in B_5,
+so my matrices for a and b should be such that
+multiplying out a times b times a
+gives the same answer as multiplying out b times a times b.
+
+<p>
+What's all this good for?
+Like most mathematicians,
+I do it because it is beautiful and interesting -
+more than this short explanation could convey.
+I take comfort in the fact that braid groups are sufficiently "mainstream"
+to be useful to plenty of other mathematicians,
+and hence indirectly to unforseeable future applications.
+Turning things into matrices
+is a powerful way of studying rotations of highly symmetric objects,
+which is useful for all sorts of things.
+There are also connections to quantum mechanics,
+which it would be nice if I understood better (or at all).
+
+<hr>
+<p>
+    <a href="http://validator.w3.org/check/referer"><img border="0"
+        src="http://www.w3.org/Icons/valid-html32"
+        alt="Valid HTML 3.2!" height="31" width="88"></a>
+
+</body>
+</html>
